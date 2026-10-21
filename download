@@ -18,7 +18,7 @@ const SHEETS = [
   { name:"Factions", color:"#dddddd", url:PUBLISHED_BASE+"?gid=284707486&single=true&output=csv", kind:"faction" }
 ];
 
-const $ = id => document.getElementById(id);
+window.$ = id => document.getElementById(id);
 
 let map, regionalMap, imageWidth=0, imageHeight=0, regionalImageWidth=0, regionalImageHeight=0;
 let selectedMarker=null, selectedPoint=null, regionalSelectedMarker=null;
